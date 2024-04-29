@@ -1,0 +1,3 @@
+/home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles/Cache.dir
+/home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles/edit_cache.dir
+/home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles/rebuild_cache.dir

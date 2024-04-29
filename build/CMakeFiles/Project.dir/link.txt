@@ -1,0 +1,1 @@
+/usr/bin/g++  -std=c++23 -Wall -O0 -g -rdynamic CMakeFiles/Project.dir/main.cpp.o -o Project 
