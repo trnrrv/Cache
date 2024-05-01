@@ -63,42 +63,75 @@ CMAKE_BINARY_DIR = /home/egor-tokarev/Practise/cpp_cash/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Cache.dir/all
+all: src/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Cache.dir/clean
+clean: src/clean
+clean: tests/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Cache.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all:
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean:
+.PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory tests
+
+# Recursive "all" directory target.
+tests/all: tests/CMakeFiles/Caches_tests.dir/all
+.PHONY : tests/all
+
+# Recursive "preinstall" directory target.
+tests/preinstall:
+.PHONY : tests/preinstall
+
+# Recursive "clean" directory target.
+tests/clean: tests/CMakeFiles/Caches_tests.dir/clean
+.PHONY : tests/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/Caches_tests.dir
 
 # All Build rule for target.
-CMakeFiles/Cache.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cache.dir/build.make CMakeFiles/Cache.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cache.dir/build.make CMakeFiles/Cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles --progress-num=1,2 "Built target Cache"
-.PHONY : CMakeFiles/Cache.dir/all
+tests/CMakeFiles/Caches_tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles --progress-num=1,2 "Built target Caches_tests"
+.PHONY : tests/CMakeFiles/Caches_tests.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Cache.dir/rule: cmake_check_build_system
+tests/CMakeFiles/Caches_tests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Cache.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Caches_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles 0
-.PHONY : CMakeFiles/Cache.dir/rule
+.PHONY : tests/CMakeFiles/Caches_tests.dir/rule
 
 # Convenience name for target.
-Cache: CMakeFiles/Cache.dir/rule
-.PHONY : Cache
+Caches_tests: tests/CMakeFiles/Caches_tests.dir/rule
+.PHONY : Caches_tests
 
 # clean rule for target.
-CMakeFiles/Cache.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cache.dir/build.make CMakeFiles/Cache.dir/clean
-.PHONY : CMakeFiles/Cache.dir/clean
+tests/CMakeFiles/Caches_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/clean
+.PHONY : tests/CMakeFiles/Caches_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

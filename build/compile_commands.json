@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/egor-tokarev/Practise/cpp_cash/build/tests",
+  "command": "/usr/bin/g++  -I/home/egor-tokarev/Practise/cpp_cash/tests/../include -I/external/cpputest/include -I/external/cpputest/include/CppUTest -I/external/cpputest/include/CppUTestExt  -std=c++11 -Wall -O0 -o CMakeFiles/Caches_tests.dir/main_tests.cpp.o -c /home/egor-tokarev/Practise/cpp_cash/tests/main_tests.cpp",
+  "file": "/home/egor-tokarev/Practise/cpp_cash/tests/main_tests.cpp",
+  "output": "tests/CMakeFiles/Caches_tests.dir/main_tests.cpp.o"
+}
+]

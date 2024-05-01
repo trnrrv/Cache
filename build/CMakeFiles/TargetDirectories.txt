@@ -1,3 +1,7 @@
-/home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles/Cache.dir
 /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles/edit_cache.dir
 /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles/rebuild_cache.dir
+/home/egor-tokarev/Practise/cpp_cash/build/src/CMakeFiles/edit_cache.dir
+/home/egor-tokarev/Practise/cpp_cash/build/src/CMakeFiles/rebuild_cache.dir
+/home/egor-tokarev/Practise/cpp_cash/build/tests/CMakeFiles/Caches_tests.dir
+/home/egor-tokarev/Practise/cpp_cash/build/tests/CMakeFiles/edit_cache.dir
+/home/egor-tokarev/Practise/cpp_cash/build/tests/CMakeFiles/rebuild_cache.dir

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles /home/egor-tokarev/Practise/cpp_cash/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles /home/egor-tokarev/Practise/cpp_cash/build/tests//CMakeFiles/progress.marks
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor-tokarev/Practise/cpp_cash/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Caches_tests
+# Convenience name for target.
+tests/CMakeFiles/Caches_tests.dir/rule:
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Caches_tests.dir/rule
+.PHONY : tests/CMakeFiles/Caches_tests.dir/rule
 
-# Build rule for target.
-Caches_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Caches_tests
+# Convenience name for target.
+Caches_tests: tests/CMakeFiles/Caches_tests.dir/rule
 .PHONY : Caches_tests
 
 # fast build rule for target.
 Caches_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/build
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/build
 .PHONY : Caches_tests/fast
+
+main_tests.o: main_tests.cpp.o
+.PHONY : main_tests.o
+
+# target to build an object file
+main_tests.cpp.o:
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/main_tests.cpp.o
+.PHONY : main_tests.cpp.o
+
+main_tests.i: main_tests.cpp.i
+.PHONY : main_tests.i
+
+# target to preprocess a source file
+main_tests.cpp.i:
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/main_tests.cpp.i
+.PHONY : main_tests.cpp.i
+
+main_tests.s: main_tests.cpp.s
+.PHONY : main_tests.s
+
+# target to generate assembly for a file
+main_tests.cpp.s:
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Caches_tests.dir/build.make tests/CMakeFiles/Caches_tests.dir/main_tests.cpp.s
+.PHONY : main_tests.cpp.s
 
 # Help Target
 help:
@@ -138,6 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Caches_tests"
+	@echo "... main_tests.o"
+	@echo "... main_tests.i"
+	@echo "... main_tests.s"
 .PHONY : help
 
 
@@ -149,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/egor-tokarev/Practise/cpp_cash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
